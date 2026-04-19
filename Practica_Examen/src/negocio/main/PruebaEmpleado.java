@@ -11,9 +11,11 @@ public class PruebaEmpleado {
 
         Empleado e1 = new Empleado("Martin", 800, "Perez");
         Empleado e2 = new Empleado("Sebs", 500, "Perez");
+        Empleado e3 = new Empleado("Adrian",500, "Perez");
 
         System.out.println("El salario anual de Martin es de "+(e1.getSalario()*12));
         System.out.println("El salario anual de Sebs es de "+(e2.getSalario()*12));
+
 
         //Asignamos nuevo salario a martin  y a sebs
         e1.setSalario(e1.getSalario() * 1.10);
