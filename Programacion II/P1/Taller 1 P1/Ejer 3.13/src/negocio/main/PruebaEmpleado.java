@@ -2,6 +2,8 @@ package negocio.main;
 
 import negocio.producto.Empleado;
 
+import java.util.Scanner;
+
 //Comando psvma para crear el main
 
 public class PruebaEmpleado {
@@ -9,9 +11,23 @@ public class PruebaEmpleado {
     static void main(String[] args) {
         //Instanciamos
 
+        Scanner entrada = new Scanner(System.in);
+
+        Empleado e3 = new Empleado();
+
+        System.out.println("Ingrese el nombre del empleado: ");
+        e3.setNombre(entrada.next());
+        System.out.println("Ingrese el apellido del empleado: ");
+        e3.setApellido(entrada.next());
+        System.out.println("Ingrese el sueldo del empleado: ");
+        e3.setSalario(entrada.nextDouble());
+
+        System.out.println("El salario anual de e3 es de "+(e3.getSalario()*12));
+
+
+        /*
         Empleado e1 = new Empleado("Martin", 800, "Perez");
         Empleado e2 = new Empleado("Sebs", 500, "Perez");
-        Empleado e3 = new Empleado("Adrian",500, "Perez");
 
         System.out.println("El salario anual de Martin es de "+(e1.getSalario()*12));
         System.out.println("El salario anual de Sebs es de "+(e2.getSalario()*12));
@@ -25,6 +41,8 @@ public class PruebaEmpleado {
         System.out.println("El nuevo salario anaul de Martin es de: "+(e1.getSalario()*12));
         System.out.println("El nuevo salario anual de Sebs es de: "+(e2.getSalario()*12));
 
+
+         */
     }
 
 }

@@ -1,0 +1,435 @@
+Index: ../../../Practica_Examen/src/negocio/producto/Empleado.java
+===================================================================
+diff --git a/../../../Practica_Examen/src/negocio/producto/Empleado.java b/../../../Practica_Examen/src/negocio/producto/Empleado.java
+deleted file mode 100644
+--- a/../../../Practica_Examen/src/negocio/producto/Empleado.java	(revision bd00981edd4617c5e326baa0f0fbafad21fc3686)
++++ /dev/null	(revision bd00981edd4617c5e326baa0f0fbafad21fc3686)
+@@ -1,43 +0,0 @@
+-package negocio.producto;
+-
+-public class Empleado {
+-    //Definimos nuestras variables a utilizar
+-    
+-    private String nombre,apellido;
+-    private  double salario;
+-
+-    //Creamos nuestro constructor
+-    public Empleado(String nombre, double salario, String apellido) {
+-        this.nombre = nombre;
+-        this.salario = salario;
+-        this.apellido = apellido;
+-    }
+-
+-    //Creamos nuestros metodos get y set
+-
+-    public String getNombre() {
+-        return nombre;
+-    }
+-
+-    public void setNombre(String nombre) {
+-        this.nombre = nombre;
+-    }
+-
+-    public double getSalario() {
+-        return salario;
+-    }
+-
+-    public void setSalario(double salario) {
+-        if(salario>0){
+-            this.salario = salario;
+-        }
+-    }
+-
+-    public String getApellido() {
+-        return apellido;
+-    }
+-
+-    public void setApellido(String apellido) {
+-        this.apellido = apellido;
+-    }
+-}
+Index: ../../../Practica_Examen/src/negocio/main/PruebaEmpleado.java
+===================================================================
+diff --git a/../../../Practica_Examen/src/negocio/main/PruebaEmpleado.java b/../../../Practica_Examen/src/negocio/main/PruebaEmpleado.java
+deleted file mode 100644
+--- a/../../../Practica_Examen/src/negocio/main/PruebaEmpleado.java	(revision bd00981edd4617c5e326baa0f0fbafad21fc3686)
++++ /dev/null	(revision bd00981edd4617c5e326baa0f0fbafad21fc3686)
+@@ -1,30 +0,0 @@
+-package negocio.main;
+-
+-import negocio.producto.Empleado;
+-
+-//Comando psvma para crear el main
+-
+-public class PruebaEmpleado {
+-
+-    static void main(String[] args) {
+-        //Instanciamos
+-
+-        Empleado e1 = new Empleado("Martin", 800, "Perez");
+-        Empleado e2 = new Empleado("Sebs", 500, "Perez");
+-        Empleado e3 = new Empleado("Adrian",500, "Perez");
+-
+-        System.out.println("El salario anual de Martin es de "+(e1.getSalario()*12));
+-        System.out.println("El salario anual de Sebs es de "+(e2.getSalario()*12));
+-
+-
+-        //Asignamos nuevo salario a martin  y a sebs
+-        e1.setSalario(e1.getSalario() * 1.10);
+-        e2.setSalario(e2.getSalario()*1.10);
+-
+-        //Imprimir en pantalla nuevo salario anual de martin y de sebs
+-        System.out.println("El nuevo salario anaul de Martin es de: "+(e1.getSalario()*12));
+-        System.out.println("El nuevo salario anual de Sebs es de: "+(e2.getSalario()*12));
+-
+-    }
+-
+-}
+Index: ../Practica_Examen/src/negocio/main/PruebaEmpleado.java
+===================================================================
+diff --git a/../Practica_Examen/src/negocio/main/PruebaEmpleado.java b/../Practica_Examen/src/negocio/main/PruebaEmpleado.java
+deleted file mode 100644
+--- a/../Practica_Examen/src/negocio/main/PruebaEmpleado.java	(revision bd00981edd4617c5e326baa0f0fbafad21fc3686)
++++ /dev/null	(revision bd00981edd4617c5e326baa0f0fbafad21fc3686)
+@@ -1,30 +0,0 @@
+-package negocio.main;
+-
+-import negocio.producto.Empleado;
+-
+-//Comando psvma para crear el main
+-
+-public class PruebaEmpleado {
+-
+-    static void main(String[] args) {
+-        //Instanciamos
+-
+-        Empleado e1 = new Empleado("Martin", 800, "Perez");
+-        Empleado e2 = new Empleado("Sebs", 500, "Perez");
+-        Empleado e3 = new Empleado("Adrian",500, "Perez");
+-
+-        System.out.println("El salario anual de Martin es de "+(e1.getSalario()*12));
+-        System.out.println("El salario anual de Sebs es de "+(e2.getSalario()*12));
+-
+-
+-        //Asignamos nuevo salario a martin  y a sebs
+-        e1.setSalario(e1.getSalario() * 1.10);
+-        e2.setSalario(e2.getSalario()*1.10);
+-
+-        //Imprimir en pantalla nuevo salario anual de martin y de sebs
+-        System.out.println("El nuevo salario anaul de Martin es de: "+(e1.getSalario()*12));
+-        System.out.println("El nuevo salario anual de Sebs es de: "+(e2.getSalario()*12));
+-
+-    }
+-
+-}
+Index: ../../../Practica_Examen/.idea/misc.xml
+===================================================================
+diff --git a/../../../Practica_Examen/.idea/misc.xml b/../../../Practica_Examen/.idea/misc.xml
+deleted file mode 100644
+--- a/../../../Practica_Examen/.idea/misc.xml	(revision bd00981edd4617c5e326baa0f0fbafad21fc3686)
++++ /dev/null	(revision bd00981edd4617c5e326baa0f0fbafad21fc3686)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectRootManager" version="2" default="true" project-jdk-name="26" project-jdk-type="JavaSDK">
+-    <output url="file://$PROJECT_DIR$/out" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: ../Practica_Examen/Practica_Examen.iml
+===================================================================
+diff --git a/../Practica_Examen/Practica_Examen.iml b/../Practica_Examen/Practica_Examen.iml
+deleted file mode 100644
+--- a/../Practica_Examen/Practica_Examen.iml	(revision bd00981edd4617c5e326baa0f0fbafad21fc3686)
++++ /dev/null	(revision bd00981edd4617c5e326baa0f0fbafad21fc3686)
+@@ -1,11 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module type="JAVA_MODULE" version="4">
+-  <component name="NewModuleRootManager" inherit-compiler-output="true">
+-    <exclude-output />
+-    <content url="file://$MODULE_DIR$">
+-      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+-    </content>
+-    <orderEntry type="inheritedJdk" />
+-    <orderEntry type="sourceFolder" forTests="false" />
+-  </component>
+-</module>
+\ No newline at end of file
+Index: ../../../Practica_Examen/.idea/.gitignore
+===================================================================
+diff --git a/../../../Practica_Examen/.idea/.gitignore b/../../../Practica_Examen/.idea/.gitignore
+deleted file mode 100644
+--- a/../../../Practica_Examen/.idea/.gitignore	(revision bd00981edd4617c5e326baa0f0fbafad21fc3686)
++++ /dev/null	(revision bd00981edd4617c5e326baa0f0fbafad21fc3686)
+@@ -1,10 +0,0 @@
+-# Default ignored files
+-/shelf/
+-/workspace.xml
+-# Editor-based HTTP Client requests
+-/httpRequests/
+-# Ignored default folder with query files
+-/queries/
+-# Datasource local storage ignored files
+-/dataSources/
+-/dataSources.local.xml
+Index: ../Practica_Examen/.idea/misc.xml
+===================================================================
+diff --git a/../Practica_Examen/.idea/misc.xml b/../Practica_Examen/.idea/misc.xml
+deleted file mode 100644
+--- a/../Practica_Examen/.idea/misc.xml	(revision bd00981edd4617c5e326baa0f0fbafad21fc3686)
++++ /dev/null	(revision bd00981edd4617c5e326baa0f0fbafad21fc3686)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectRootManager" version="2" default="true" project-jdk-name="26" project-jdk-type="JavaSDK">
+-    <output url="file://$PROJECT_DIR$/out" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: ../../../Practica_Examen/.gitignore
+===================================================================
+diff --git a/../../../Practica_Examen/.gitignore b/../../../Practica_Examen/.gitignore
+deleted file mode 100644
+--- a/../../../Practica_Examen/.gitignore	(revision bd00981edd4617c5e326baa0f0fbafad21fc3686)
++++ /dev/null	(revision bd00981edd4617c5e326baa0f0fbafad21fc3686)
+@@ -1,30 +0,0 @@
+-### IntelliJ IDEA ###
+-out/
+-!**/src/main/**/out/
+-!**/src/test/**/out/
+-.kotlin
+-
+-### Eclipse ###
+-.apt_generated
+-.classpath
+-.factorypath
+-.project
+-.settings
+-.springBeans
+-.sts4-cache
+-bin/
+-!**/src/main/**/bin/
+-!**/src/test/**/bin/
+-
+-### NetBeans ###
+-/nbproject/private/
+-/nbbuild/
+-/dist/
+-/nbdist/
+-/.nb-gradle/
+-
+-### VS Code ###
+-.vscode/
+-
+-### Mac OS ###
+-.DS_Store
+\ No newline at end of file
+Index: ../Practica_Examen/.idea/modules.xml
+===================================================================
+diff --git a/../Practica_Examen/.idea/modules.xml b/../Practica_Examen/.idea/modules.xml
+deleted file mode 100644
+--- a/../Practica_Examen/.idea/modules.xml	(revision bd00981edd4617c5e326baa0f0fbafad21fc3686)
++++ /dev/null	(revision bd00981edd4617c5e326baa0f0fbafad21fc3686)
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/Practica_Examen.iml" filepath="$PROJECT_DIR$/Practica_Examen.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: ../../../Practica_Examen/.idea/vcs.xml
+===================================================================
+diff --git a/../../../Practica_Examen/.idea/vcs.xml b/../../../Practica_Examen/.idea/vcs.xml
+deleted file mode 100644
+--- a/../../../Practica_Examen/.idea/vcs.xml	(revision bd00981edd4617c5e326baa0f0fbafad21fc3686)
++++ /dev/null	(revision bd00981edd4617c5e326baa0f0fbafad21fc3686)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="VcsDirectoryMappings">
+-    <mapping directory="$USER_HOME$/Codigos Semestre 4" vcs="Git" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: ../Practica_Examen/src/negocio/producto/Empleado.java
+===================================================================
+diff --git a/../Practica_Examen/src/negocio/producto/Empleado.java b/../Practica_Examen/src/negocio/producto/Empleado.java
+deleted file mode 100644
+--- a/../Practica_Examen/src/negocio/producto/Empleado.java	(revision bd00981edd4617c5e326baa0f0fbafad21fc3686)
++++ /dev/null	(revision bd00981edd4617c5e326baa0f0fbafad21fc3686)
+@@ -1,43 +0,0 @@
+-package negocio.producto;
+-
+-public class Empleado {
+-    //Definimos nuestras variables a utilizar
+-    
+-    private String nombre,apellido;
+-    private  double salario;
+-
+-    //Creamos nuestro constructor
+-    public Empleado(String nombre, double salario, String apellido) {
+-        this.nombre = nombre;
+-        this.salario = salario;
+-        this.apellido = apellido;
+-    }
+-
+-    //Creamos nuestros metodos get y set
+-
+-    public String getNombre() {
+-        return nombre;
+-    }
+-
+-    public void setNombre(String nombre) {
+-        this.nombre = nombre;
+-    }
+-
+-    public double getSalario() {
+-        return salario;
+-    }
+-
+-    public void setSalario(double salario) {
+-        if(salario>0){
+-            this.salario = salario;
+-        }
+-    }
+-
+-    public String getApellido() {
+-        return apellido;
+-    }
+-
+-    public void setApellido(String apellido) {
+-        this.apellido = apellido;
+-    }
+-}
+Index: ../Practica_Examen/.idea/workspace.xml
+===================================================================
+diff --git a/../Practica_Examen/.idea/workspace.xml b/../Practica_Examen/.idea/workspace.xml
+deleted file mode 100644
+--- a/../Practica_Examen/.idea/workspace.xml	(revision bd00981edd4617c5e326baa0f0fbafad21fc3686)
++++ /dev/null	(revision bd00981edd4617c5e326baa0f0fbafad21fc3686)
+@@ -1,72 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ChangeListManager">
+-    <list default="true" id="a90fc384-ed16-4ac6-87af-7a3496f3b79e" name="Changes" comment="Taller 1 P1 Ejer 3.13" />
+-    <option name="SHOW_DIALOG" value="false" />
+-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+-    <option name="LAST_RESOLUTION" value="IGNORE" />
+-  </component>
+-  <component name="FileTemplateManagerImpl">
+-    <option name="RECENT_TEMPLATES">
+-      <list>
+-        <option value="Class" />
+-      </list>
+-    </option>
+-  </component>
+-  <component name="Git.Settings">
+-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/Codigos Semestre 4" />
+-  </component>
+-  <component name="ProjectColorInfo"><![CDATA[{
+-  "associatedIndex": 6,
+-  "fromUser": false
+-}]]></component>
+-  <component name="ProjectId" id="3CapbCpdI84WIC2QWdYN3AYI94K" />
+-  <component name="ProjectViewState">
+-    <option name="hideEmptyMiddlePackages" value="true" />
+-    <option name="showLibraryContents" value="true" />
+-  </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "Application.Main.executor": "Run",
+-    "Application.PruebaEmpleado.executor": "Run",
+-    "ModuleVcsDetector.initialDetectionPerformed": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+-    "codeWithMe.voiceChat.enabledByDefault": "false",
+-    "git-widget-placeholder": "master",
+-    "kotlin-language-version-configured": "true",
+-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.com.intellij.openapi.vcs.actions.VcsColorsPageFactory"
+-  }
+-}]]></component>
+-  <component name="TaskManager">
+-    <task active="true" id="Default" summary="Default task">
+-      <changelist id="a90fc384-ed16-4ac6-87af-7a3496f3b79e" name="Changes" comment="" />
+-      <created>1776633608343</created>
+-      <option name="number" value="Default" />
+-      <option name="presentableId" value="Default" />
+-      <updated>1776633608343</updated>
+-    </task>
+-    <task id="LOCAL-00001" summary="Taller 1 P1 Ejer 3.13">
+-      <option name="closed" value="true" />
+-      <created>1776638143134</created>
+-      <option name="number" value="00001" />
+-      <option name="presentableId" value="LOCAL-00001" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1776638143134</updated>
+-    </task>
+-    <option name="localTasksCounter" value="2" />
+-    <servers />
+-  </component>
+-  <component name="TypeScriptGeneratedFilesManager">
+-    <option name="version" value="3" />
+-  </component>
+-  <component name="VcsManagerConfiguration">
+-    <MESSAGE value="Taller 1 P1 Ejer 3.13" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Taller 1 P1 Ejer 3.13" />
+-  </component>
+-  <component name="XSLT-Support.FileAssociations.UIState">
+-    <expand />
+-    <select />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: ../../../Practica_Examen/.idea/modules.xml
+===================================================================
+diff --git a/../../../Practica_Examen/.idea/modules.xml b/../../../Practica_Examen/.idea/modules.xml
+deleted file mode 100644
+--- a/../../../Practica_Examen/.idea/modules.xml	(revision bd00981edd4617c5e326baa0f0fbafad21fc3686)
++++ /dev/null	(revision bd00981edd4617c5e326baa0f0fbafad21fc3686)
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/Practica_Examen.iml" filepath="$PROJECT_DIR$/Practica_Examen.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: ../Practica_Examen/.idea/vcs.xml
+===================================================================
+diff --git a/../Practica_Examen/.idea/vcs.xml b/../Practica_Examen/.idea/vcs.xml
+deleted file mode 100644
+--- a/../Practica_Examen/.idea/vcs.xml	(revision bd00981edd4617c5e326baa0f0fbafad21fc3686)
++++ /dev/null	(revision bd00981edd4617c5e326baa0f0fbafad21fc3686)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="VcsDirectoryMappings">
+-    <mapping directory="$USER_HOME$/Codigos Semestre 4" vcs="Git" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: ../../../Practica_Examen/Practica_Examen.iml
+===================================================================
+diff --git a/../../../Practica_Examen/Practica_Examen.iml b/../../../Practica_Examen/Practica_Examen.iml
+deleted file mode 100644
+--- a/../../../Practica_Examen/Practica_Examen.iml	(revision bd00981edd4617c5e326baa0f0fbafad21fc3686)
++++ /dev/null	(revision bd00981edd4617c5e326baa0f0fbafad21fc3686)
+@@ -1,11 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module type="JAVA_MODULE" version="4">
+-  <component name="NewModuleRootManager" inherit-compiler-output="true">
+-    <exclude-output />
+-    <content url="file://$MODULE_DIR$">
+-      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+-    </content>
+-    <orderEntry type="inheritedJdk" />
+-    <orderEntry type="sourceFolder" forTests="false" />
+-  </component>
+-</module>
+\ No newline at end of file

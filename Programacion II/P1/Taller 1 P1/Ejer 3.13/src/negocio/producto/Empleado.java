@@ -7,6 +7,15 @@ public class Empleado {
     private  double salario;
 
     //Creamos nuestro constructor
+
+
+    public Empleado() {
+        this.nombre = "Nuevo";
+        this.apellido = "Empleado";
+        this.salario = 0.0;
+
+    }
+
     public Empleado(String nombre, double salario, String apellido) {
         this.nombre = nombre;
         this.salario = salario;
