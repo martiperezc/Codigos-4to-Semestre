@@ -8,7 +8,6 @@ public class Empleado {
 
     //Creamos nuestro constructor
 
-
     public Empleado() {
         this.nombre = "Nuevo";
         this.apellido = "Empleado";

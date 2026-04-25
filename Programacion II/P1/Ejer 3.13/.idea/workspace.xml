@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a90fc384-ed16-4ac6-87af-7a3496f3b79e" name="Changes" comment="Taller 1 P1 Ejer 3.13" />
+    <list default="true" id="a90fc384-ed16-4ac6-87af-7a3496f3b79e" name="Changes" comment="Actualizacion nombre a EJER 3.13">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practica_Examen.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica_Examen/negocio/main/PruebaEmpleado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica_Examen/negocio/producto/Empleado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/negocio/main/PruebaEmpleado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/negocio/producto/Empleado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica_Examen/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica_Examen/out/production/Practica_Examen/negocio/main/PruebaEmpleado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica_Examen/out/production/Practica_Examen/negocio/producto/Empleado.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,30 +28,45 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/Codigos Semestre 4" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6,
-  "fromUser": false
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;martiperezc&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/martiperezc/Codigos-4to-Semestre.git&quot;,
+    &quot;accountId&quot;: &quot;cc0855cc-af24-4731-98b6-79a17687001a&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3CapbCpdI84WIC2QWdYN3AYI94K" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.PruebaEmpleado.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.com.intellij.openapi.vcs.actions.VcsColorsPageFactory"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PruebaEmpleado.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/marti/Codigos Semestre 4/Programacion II/P1/Ejer 3.13&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.com.intellij.openapi.vcs.actions.VcsColorsPageFactory&quot;
   }
-}]]></component>
+}</component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a90fc384-ed16-4ac6-87af-7a3496f3b79e" name="Changes" comment="" />
@@ -55,7 +83,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776638143134</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Actualizacion nombre a EJER 3.13">
+      <option name="closed" value="true" />
+      <created>1776639636327</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1776639636327</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -63,7 +99,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Taller 1 P1 Ejer 3.13" />
-    <option name="LAST_COMMIT_MESSAGE" value="Taller 1 P1 Ejer 3.13" />
+    <MESSAGE value="Actualizacion nombre a EJER 3.13" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actualizacion nombre a EJER 3.13" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

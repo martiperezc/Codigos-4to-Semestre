@@ -1,0 +1,25 @@
+% Subimos imagen
+imgOriginal = imread('Sky.jpg'); % Debe ser > 640x480 
+
+
+% Para mejor visualizacion rotamos la imagen en 90 grados hacia la derecha
+imgOriginal = rot90(imgOriginal, -1); 
+
+imgGray = rgb2gray(imgOriginal); 
+imgDouble = double(imgGray);
+
+% Aplicación de SVD con tolerancia de 10^-3
+[U1, S1, V1] = svdsketch(imgDouble, 1e-3); 
+
+% Reconstruimos la matriz comprimida en 10^-3
+imgComprimida = uint8(U1 * S1 * V1'); 
+
+%Comparamos resultados
+figure(1);
+subplot(1,2,1); imshow(imgGray); title('Original');
+subplot(1,2,2); imshow(imgComprimida); 
+title(sprintf('Compresión SVD (Rango %d)', size(S1,1)));
+
+% Verificación de dimensiones de las matrices resultantes [cite: 88]
+disp('Dimensiones de matrices comprimidas:');
+whos U1 S1 V1
