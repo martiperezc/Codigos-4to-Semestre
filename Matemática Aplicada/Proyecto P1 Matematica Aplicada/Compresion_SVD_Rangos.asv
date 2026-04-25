@@ -7,41 +7,41 @@ imgOriginal = rot90(imgOriginal, -1);
 imgGray = rgb2gray(imgOriginal); 
 imgDouble = double(imgGray);
 
-% Agregamos los rangos solicitados para compresión
+% Agre
 r25 = 25;
 r5 = 5;
 
-% Uso del comando SVD truncada para obtener directamente cada rango
+% Comentario agregado: se usa SVD truncada para obtener directamente cada rango
 [U25, S25, V25] = svds(imgDouble, r25);
 [U5, S5, V5] = svds(imgDouble, r5);
 
-% Reconstruimos la matriz para rango 25
+% Reconstruimos la matriz comprimida en 25
 imgComprimida25 = uint8(U25 * S25 * V25');
 
-% Reconstruimos la matriz para rango 5
+% Comentario agregado: reconstrucción para rango 5
 imgComprimida5 = uint8(U5 * S5 * V5');
 
 % Cálculo de la eficiencia de compresión
 [m, n] = size(imgGray); % Obtención de dimensiones originales
 bytesOriginal = m * n; % Total de elementos originales
 
-% Eficiencia para rango 25
+% Comentario agregado: eficiencia para rango 25
 bytesComprimido25 = r25 * (m + n + 1); % Elementos necesarios en matrices U, S y V 
-eficiencia25 = (bytesComprimido25 / bytesOriginal) * 100; % Fórmula de eficiencia de compresión
+eficiencia25 = ((bytesOriginal - bytesComprimido25) / bytesOriginal) * 100; % Cálculo del porcentaje final
 
-% Comentario agregado: eficiencia para rang o 5
+% Comentario agregado: eficiencia para rango 5
 bytesComprimido5 = r5 * (m + n + 1); % Elementos necesarios en matrices U, S y V 
-eficiencia5 = (bytesComprimido5 / bytesOriginal) * 100; % Fórmula de eficiencia de compresión
+eficiencia5 = ((bytesOriginal - bytesComprimido5) / bytesOriginal) * 100; % Cálculo del porcentaje final
 
 %Comparacion de resultados
 figure(1);
 subplot(1,3,1); imshow(imgGray); title('Original');
 
 subplot(1,3,2); imshow(imgComprimida25); 
-title(sprintf('Compresión (Rango %d) - Efic: %.2f%%', r25, eficiencia25));
+title(sprintf('Compresión SVD (Rango %d) - Efic: %.2f%%', r25, eficiencia25));
 
 subplot(1,3,3); imshow(imgComprimida5); 
-title(sprintf('Compresión (Rango %d) - Efic: %.2f%%', r5, eficiencia5));
+title(sprintf('Compresión SVD (Rango %d) - Efic: %.2f%%', r5, eficiencia5));
 
 fprintf('La eficiencia de compresión para r=%d es: %.2f%%\n', r25, eficiencia25); 
 fprintf('La eficiencia de compresión para r=%d es: %.2f%%\n', r5, eficiencia5);
