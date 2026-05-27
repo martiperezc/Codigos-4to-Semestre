@@ -36,7 +36,7 @@ public class Lote {
     // Actualiza el estado basado en el stock y la fecha
     public void actualizarEstado() {
         if (this.cantidadStock <= 0) {
-            this.estadoLote = "AGOTADO";
+                this.estadoLote = "AGOTADO";
         } else if (this.diasCaducar < 0) {
             this.estadoLote = "CADUCADO";
         } else {
@@ -84,6 +84,4 @@ public class Lote {
         return estadoLote;
     }
 
-    // Se omite el setter de estadoLote porque el estado debe ser controlado
-    // únicamente por el método actualizarEstado() para evitar inconsistencias manuales.
 }
